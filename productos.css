@@ -44,11 +44,17 @@ nav a {
   padding: 30px 20px; /* Gracias a border-box, esos 20px no van a sobrepasar los 30%
   que definimos del ancho, van a ser contabilizados dentro de ese 30% */
   box-sizing: border-box; /* El borde de cada uno de los items sera el limite del espacio que va a ser definido*/
+  border: 2px solid #000000;
+  border-radius: 10px; /* Orden en sentido del reloj */
 }
 
 .productos h2 {
   font-size: 30px;
   font-weight: bold;
+}
+
+.productos li:hover h2 {
+  font-size: 33px;
 }
 
 .producto-descripcion {
@@ -59,4 +65,29 @@ nav a {
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+nav a:hover {
+  /* Captura el comportamiento del movimiento de mouse */
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.productos li:hover {
+  border-color: #c78c19;
+}
+
+.productos li:active {
+  border-color: #088c19;
+}
+
+footer {
+  text-align: center;
+  background-image: url(./imagenes/bg.jpg);
+  padding: 40px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
 }
