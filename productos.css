@@ -1,0 +1,62 @@
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 0 0 0 15px;
+}
+
+.productos {
+  width: 940px; /* Tamaño padron de las pantallas de 1280 */
+  margin: 0 auto; /* Los laterales se distribuyen de forma automática */
+  padding: 50px;
+}
+
+.productos li {
+  /* Cada item de la lista */
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px; /* Gracias a border-box, esos 20px no van a sobrepasar los 30%
+  que definimos del ancho, van a ser contabilizados dentro de ese 30% */
+  box-sizing: border-box; /* El borde de cada uno de los items sera el limite del espacio que va a ser definido*/
+}
+
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.producto-descripcion {
+  font-size: 18px;
+}
+
+.producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
