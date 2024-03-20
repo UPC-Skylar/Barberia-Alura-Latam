@@ -1,0 +1,47 @@
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 0 0 0 15px;
+}
+
+nav a:hover {
+  /* Captura el comportamiento del movimiento de mouse */
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background-image: url(./imagenes/bg.jpg);
+  padding: 40px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
+  margin: 20px;
+}
